@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E89734</color>
+    <color name="colorPrimaryDark">#DE5749</color>
+    <color name="colorAccent">#5A87A4</color>
+
+    <!-- pill colors-->
+    <color name="strong_light_blue">#9EB8CA</color>
+    <color name="weak_light_blue">#E0D5DF</color>
+
+    <color name="strong_light_orange">#F7C36E</color>
+    <color name="weak_light_orange">#FBE5B8</color>
+
+    <color name="strong_light_green">#99C38D</color>
+    <color name="weak_light_green">#DBECD4</color>
+
+    <!-- green-blue strong -->
+    <color name="green">#69BD2D</color>
+    <color name="blue">#377FD1</color>
+
+    <!-- red-pink strong -->
+    <color name="red">#E22F2F</color>
+    <color name="pink">#E92078</color>
+
+    <!-- orange-brown strong -->
+    <color name="brown">#AD670E</color>
+    <color name="orange">#EC8909</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>

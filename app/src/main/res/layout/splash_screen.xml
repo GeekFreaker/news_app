@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay"
+    tools:context=".Activities.SplashScreenActivity">
+
+
+    <ProgressBar
+        android:theme="@style/MyProgressDialogStyleTwo"
+        android:foregroundGravity="top|center"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/coffee_one"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:gravity="bottom|center"
+        android:paddingBottom="160dp"
+        android:shadowRadius="4"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:textStyle="bold"
+        android:shadowColor="@color/black_overlay"
+        android:text="@string/app_name"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

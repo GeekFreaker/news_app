@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    app:layout_constraintCircleRadius="1dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/card_view"
+    app:cardCornerRadius="3dp">
+
+    <TextView
+        android:paddingTop="170dp"
+        android:id="@+id/art_headline"
+        tools:text="headline"
+        android:textAllCaps="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:shadowRadius="2"
+        android:shadowDx="1.3"
+        android:shadowDy="1.8"
+        android:shadowColor="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:gravity="bottom|center"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        >
+            <ImageView
+                android:id="@+id/imgBanner"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/banner_red"
+                android:translationZ="40dp"
+                android:scaleType="fitXY"
+                android:foregroundGravity="top"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="a view of the article"
+                tools:targetApi="lollipop" />
+
+            <ProgressBar
+                android:id="@+id/thumbnail_progressBar"
+                android:theme="@style/MyProgressDialogStyleTwo"
+                style="?android:attr/progressBarStyle"
+                android:progressDrawable="@drawable/three_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+             android:id="@+id/imgThumbnail"
+             tools:src=""
+             android:scaleType="fitXY"
+             android:translationZ="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:contentDescription="a view of the article" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/art_summary"
+            tools:text="summary"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:shadowRadius="4"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowColor="@android:color/black"
+            android:maxLines="4"
+            android:padding="5dp"
+            android:gravity="left"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            />
+
+        <LinearLayout
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:id="@+id/art_stat"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/one_state"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                />
+
+            <View
+                android:background="@drawable/type_section"
+                android:layout_marginLeft="5dp"
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                />
+            <TextView
+                android:id="@+id/art_type"
+                tools:text="type"
+                android:padding="6dp"
+                android:maxLength="7"
+                android:background="@drawable/type_section_background"
+                android:textColor="@android:color/black"
+                android:shadowRadius="2"
+                android:shadowDx="1.3"
+                android:shadowDy="1.8"
+                android:shadowColor="@android:color/black"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+            <View
+                android:id="@+id/pill_section"
+                android:layout_marginLeft="5dp"
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:background="@drawable/pill_section"
+                />
+            <TextView
+                android:id="@+id/art_section"
+                tools:text="section"
+                android:gravity="center"
+                android:padding="6dp"
+                android:maxLength="12"
+                android:shadowRadius="2"
+                android:shadowDx="1.3"
+                android:shadowDy="1.8"
+                android:shadowColor="@android:color/black"
+                android:background="@drawable/pill_section_background"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+            </TextView>
+
+            <View
+                android:background="@drawable/section_section"
+                android:layout_marginLeft="5dp"
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                />
+
+            <TextView
+                android:id="@+id/art_pillname"
+                tools:text="pill name"
+                android:gravity="center"
+                android:padding="2dp"
+                android:maxLength="10"
+                android:background="@drawable/section_section_background"
+                android:textColor="@android:color/black"
+                android:shadowRadius="2"
+                android:shadowDx="1.3"
+                android:shadowDy="1.8"
+                android:shadowColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:layout_marginRight="10dp"
+            >
+            <TextView
+                android:textAllCaps="true"
+                android:padding="2dp"
+                android:id="@+id/art_date"
+                tools:text="time"
+                android:gravity="bottom|right"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <TextView
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:textAllCaps="true"
+                android:id="@+id/art_time"
+                tools:text="DATE"
+                android:gravity="top|right"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

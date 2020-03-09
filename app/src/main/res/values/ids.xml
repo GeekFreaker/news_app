@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fab_one_label"   type="id" />
+    <item name="fab_two_label"   type="id" />
+    <item name="fab_three_label" type="id" />
+    <item name="fab_four_label"  type="id" />
+</resources>

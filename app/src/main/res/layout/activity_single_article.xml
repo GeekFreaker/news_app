@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="@color/design_default_color_background"
+    tools:context=".Activities.SingleArticleActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <FrameLayout
+    android:id="@+id/upright_layout"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:orientation="vertical"
+    tools:ignore="UseCompoundDrawables">
+
+
+    <ImageView
+        android:id="@+id/article_view"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        tools:src="@drawable/two_state"
+        android:padding="0dp"
+        />
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:gravity="bottom|center"
+        android:keepScreenOn="true"
+        android:textColor="@color/black_overlay"
+        android:textSize="33sp"
+        android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/article_title"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="bottom|center"
+            android:keepScreenOn="true"
+            tools:text="maybe"
+            android:textColor="@color/black_overlay"
+            android:textSize="37sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/extra_value"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_gravity="bottom"
+        >
+
+        <ImageView
+            android:id="@+id/article_stat"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/one_state"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            />
+
+        <View
+            android:background="@drawable/type_section"
+            android:layout_marginLeft="10dp"
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            />
+
+        <TextView
+            android:id="@+id/article_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/type_section_background"
+            android:gravity="center"
+            android:maxLength="12"
+            android:padding="6dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1.3"
+            android:shadowDy="1.8"
+            android:shadowRadius="2"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            tools:text="type" />
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:background="@drawable/pill_section" />
+
+        <TextView
+            android:id="@+id/article_section"
+            tools:text="section"
+            android:gravity="center"
+            android:padding="6dp"
+            android:maxLength="30"
+            android:shadowRadius="2"
+            android:shadowDx="1.3"
+            android:shadowDy="1.8"
+            android:shadowColor="@android:color/black"
+            android:background="@drawable/pill_section_background"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </TextView>
+
+        <View
+            android:background="@drawable/section_section"
+            android:layout_marginLeft="10dp"
+            android:layout_width="10dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/article_pillName"
+            tools:text="pill name"
+            android:gravity="center"
+            android:padding="2dp"
+            android:maxLength="30"
+            android:background="@drawable/section_section_background"
+            android:textColor="@android:color/black"
+            android:shadowRadius="2"
+            android:shadowDx="1.3"
+            android:shadowDy="1.8"
+            android:shadowColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:background="@drawable/section_writer"
+            android:layout_marginLeft="30dp"
+            android:layout_width="10dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/article_writer"
+            tools:text="Article Writer"
+            android:gravity="center"
+            android:padding="2dp"
+            android:maxLength="40"
+            android:textColor="@android:color/black"
+            android:shadowRadius="2"
+            android:shadowDx="1.3"
+            android:shadowDy="1.8"
+            android:shadowColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date_time_value"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_gravity="top">
+
+        <TextView
+            android:id="@+id/article_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLength="30"
+            android:padding="6dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1.3"
+            android:shadowDy="1.8"
+            android:shadowRadius="2"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:text="article time :" />
+
+
+        <TextView
+            android:id="@+id/article_time"
+            android:gravity="center"
+            android:padding="2dp"
+            android:maxLength="30"
+            android:background="@drawable/section_section_background"
+            android:textColor="@android:color/black"
+            android:shadowRadius="2"
+            android:shadowDx="1.3"
+            android:shadowDy="1.8"
+            android:shadowColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="00:00:00"/>
+
+        <TextView
+            android:id="@+id/article_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLength="20"
+            android:layout_marginLeft="110dp"
+            android:padding="6dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1.3"
+            android:shadowDy="1.8"
+            android:shadowRadius="2"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:text="at this date :" />
+
+        <TextView
+            android:id="@+id/article_date"
+            tools:text="article date"
+            android:gravity="center"
+            android:padding="2dp"
+            android:maxLength="30"
+            android:background="@drawable/section_section_background"
+            android:textColor="@android:color/black"
+            android:shadowRadius="2"
+            android:shadowDx="1.3"
+            android:shadowDy="1.8"
+            android:shadowColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="340dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/single_body"
+            android:layout_width="match_parent"
+            tools:text="hardy ha ha"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/black"
+            android:shadowColor="@color/black_overlay"
+            android:shadowDx="1.3"
+            android:shadowDy="1.5"
+            android:shadowRadius="2"
+            android:layout_height="480dp"
+            />
+    </ScrollView>
+
+</FrameLayout>

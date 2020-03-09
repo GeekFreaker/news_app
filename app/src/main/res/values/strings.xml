@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Search Articles</string>
+
+    <!-- Strings for menu Items-->
+    <string name="search_locations">location</string>
+    <string name="search_topic">topic</string>
+    <string name="search_person">person</string>
+
+    <string name="api_key">6a469cc7-fb5d-4611-a343-9eaba1eea651</string>
+
+    <string name="title_activity_single_article">SingleArticleActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <!-- Handle no connectivity strings -->
+    <string name="first_page">First page</string>
+    <string name="next_page">Next</string>
+    <string name="previous_page">Previous</string>
+    <string name="last_page">Last Page</string>
+    <string name="lost_connection">You have lost your internet connection, try again when you are online.</string>
+    <string name="attempting_connection">connecting...</string>
+    <string name="on_first">You\'re on the first page</string>
+    <string name="on_last">You\'re on the last page</string>
+    <string name="reloading">relaoding the articles...</string>
+    <string name="in_between">"loading page "</string>
+    <string name="prefer">what do you prefer...</string>
+    <string name="enter_vals">Enter Either a location, a person or a topic</string>
+
+</resources>
